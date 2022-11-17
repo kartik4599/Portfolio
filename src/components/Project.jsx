@@ -97,7 +97,7 @@ const Project = () => {
                 Restaurant Website
               </span>
               <div className="pt-8 text-center">
-                <a href="https://restaurant-app-3b395.web.app/" target="_blank">
+                <a href="https://react-http-75eb7.web.app/" target="_blank">
                   <button className="text-center rounded-xl px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
