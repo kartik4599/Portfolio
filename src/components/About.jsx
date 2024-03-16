@@ -17,9 +17,11 @@ const About = () => {
             <p>Hi. I'm Kartik, nice to meet you. Please take a look around</p>
           </div>
           <div>
-            <p>I'm interested in the Front End Engineer because I like working in
-              this ridesharing space and creating products to improve the lives
-              of users.</p>
+            <p>
+              I'm interested in the Web Development because Web development is a
+              fast-paced, challenging career centered on creative
+              problem-solving and continuous innovation.
+            </p>
           </div>
         </div>
       </div>

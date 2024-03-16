@@ -1,5 +1,4 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
-
 import React from "react";
 import { Link } from "react-scroll";
 
@@ -12,19 +11,21 @@ const Home = () => {
           Kartik Mendu
         </h1>
         <h2 className="text-4xl sm:text-6xl font-bold text-[#8892b0]">
-          I'm a Front-end Developer
+          I'm a Full-Stack Web Developer
         </h2>
         <p className="text-[#8892b0]  max-w-[700px] py-3">
-          Hi, I'm Kartik Mendu, and I graduated from the Savitribai Phule Pune
-          University in 2022 with a degree in Computer Science. My interests are
-          in Front End Engineering, and I love to create beautiful and
-          performant products with delightful user experiences.
+          Hello, my name is Kartik Mendu, and I’m a full stack developer. With
+          2 years of experience in web development, I have a strong command
+          over both front-end and back-end technologies, allowing me to build
+          complete and scalable applications. I
+          love to create beautiful and performant products with delightful user
+          experiences.
         </p>
         <div>
           <Link to="work" smooth={true} duration={500}>
             <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-500 hover:border-pink-500">
               View Work
-              <span className="group-hover:rotate-180 duration-500">
+              <span className="group-hover:rotate-90 duration-500">
                 <HiArrowNarrowRight className="ml-4" />
               </span>
             </button>

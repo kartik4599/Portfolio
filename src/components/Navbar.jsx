@@ -9,97 +9,75 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const navHandler = () => {
-    console.log(nav);
     setNav(!nav);
   };
+
+  const headers = [
+    {
+      title: "Home",
+      url: "home",
+    },
+    {
+      title: "About",
+      url: "about",
+    },
+    {
+      title: "Skills",
+      url: "skills",
+    },
+    {
+      title: "Projects",
+      url: "work",
+    },
+    {
+      title: "Contact",
+      url: "contact",
+    },
+  ];
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-1 bg-[#0a192f] text-gray-300">
       <div>
         <img src={Logo} alt="Logo" style={{ width: "100px" }} />
       </div>
-      {/* menu */}
-
+      {/* desktop menu */} 
       <ul className="hidden md:flex">
-        <li>
-          <Link to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link to="work" smooth={true} duration={500}>
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
+        {headers.map((header) => (
+          <li key={header.title}>
+            <Link to={header.url} smooth={true} duration={500}>
+              {header.title}
+            </Link>
+          </li>
+        ))}
       </ul>
-
       {/* //icons */}
       <div onClick={navHandler} className="md:hidden z-10">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
-
       {/* mobile menu */}
       {nav && (
         <ul className="absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center">
-          <li className="py-6 text-4xl">
-            {" "}
-            <Link onClick={navHandler} to="home" smooth={true} duration={500}>
-              Home
-            </Link>
-          </li>
-          <li className="py-6 text-4xl">
-            {" "}
-            <Link onClick={navHandler} to="about" smooth={true} duration={500}>
-              About
-            </Link>
-          </li>
-          <li className="py-6 text-4xl">
-            {" "}
-            <Link onClick={navHandler} to="skills" smooth={true} duration={500}>
-              Skills
-            </Link>
-          </li>
-          <li className="py-6 text-4xl">
-            {" "}
-            <Link onClick={navHandler} to="work" smooth={true} duration={500}>
-              Projects
-            </Link>
-          </li>
-          <li className="py-6 text-4xl">
-            {" "}
-            <Link
-              onClick={navHandler}
-              to="contact"
-              smooth={true}
-              duration={500}>
-              Contact
-            </Link>
-          </li>
+          {headers.map((header) => (
+            <li className="py-6 text-4xl">
+              <Link
+                onClick={navHandler}
+                to={header.url}
+                smooth={true}
+                duration={500}>
+                {header.title}
+              </Link>
+            </li>
+          ))}
         </ul>
       )}
-
       <div className="hidden lg:flex  fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-blue-900">
             <a
               className="flex justify-between items-center w-full  text-gray-300"
               href="https://www.linkedin.com/in/kartik-mendu-6a7496245"
-              target="_blank">
+              target="_blank"
+              rel="noreferrer">
               LinkedIn
               <FaLinkedin size={30} />
             </a>
@@ -108,7 +86,8 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full  text-gray-300"
               href="https://github.com/kartik4599"
-              target="_blank">
+              target="_blank"
+              rel="noreferrer">
               Github
               <FaGithub size={30} />
             </a>
@@ -117,7 +96,8 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full  text-gray-300"
               href="https://mail.google.com"
-              target="_blank">
+              target="_blank"
+              rel="noreferrer">
               Mail
               <HiOutlineMail size={30} />
             </a>
@@ -126,7 +106,8 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full  text-gray-300"
               href="https://drive.google.com/file/d/1rIR2sIsGlg0aVhoDCtLHi39kC8n7hiws/view?usp=share_link"
-              target="_blank">
+              target="_blank"
+              rel="noreferrer">
               Resume
               <BsFillPersonLinesFill size={30} />
             </a>

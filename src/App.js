@@ -10,10 +10,10 @@ function App() {
     <div className="w-full h-screen bg-[#0a192f]">
       <Navbar />
       <Home />
-      <About/>
-      <Skill/>
-      <Project/>
-      <Contact/>
+      <About />
+      <Skill />
+      <Project />
+      <Contact />
     </div>
   );
 }
