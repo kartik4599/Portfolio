@@ -15,7 +15,7 @@ const Home = () => {
         </h2>
         <p className="text-[#8892b0]  max-w-[700px] py-3">
           Hello, my name is Kartik Mendu, and I’m a full stack developer. With
-          2 years of experience in web development, I have a strong command
+          2.5+ years of experience in web development, I have a strong command
           over both front-end and back-end technologies, allowing me to build
           complete and scalable applications. I
           love to create beautiful and performant products with delightful user

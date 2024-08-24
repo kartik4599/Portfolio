@@ -40,7 +40,7 @@ const Navbar = () => {
       <div>
         <img src={Logo} alt="Logo" style={{ width: "100px" }} />
       </div>
-      {/* desktop menu */} 
+      {/* desktop menu */}
       <ul className="hidden md:flex">
         {headers.map((header) => (
           <li key={header.title}>
@@ -70,7 +70,7 @@ const Navbar = () => {
           ))}
         </ul>
       )}
-      <div className="hidden lg:flex  fixed flex-col top-[35%] left-0">
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-blue-900">
             <a
@@ -95,7 +95,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-[#6fc2b0]">
             <a
               className="flex justify-between items-center w-full  text-gray-300"
-              href="https://mail.google.com"
+              href="mailto:kartikmendu2@gmail.com"
               target="_blank"
               rel="noreferrer">
               Mail
@@ -105,7 +105,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full  text-gray-300"
-              href="https://drive.google.com/file/d/1rIR2sIsGlg0aVhoDCtLHi39kC8n7hiws/view?usp=share_link"
+              href="https://drive.google.com/file/d/1bnPVDFhvVWpe4RTg_LDLhgDd-ryVL8ZZ/view?usp=sharing"
               target="_blank"
               rel="noreferrer">
               Resume

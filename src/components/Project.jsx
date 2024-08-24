@@ -4,6 +4,12 @@ import social from "../assets/projects/social.jpg";
 const Project = () => {
   const projectArr = [
     {
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFgGCM5B1_3lMke5O32Wmp8ysnae5s9XCWuKhbrn9mPHQceV83vXgfNkU86YdQt84pVsg",
+      name: "Form Builder",
+      demo: "https://form-builder-olive-two.vercel.app/",
+      code: "https://github.com/kartik4599/form-builder",
+    },
+    {
       src: "https://cdn.dribbble.com/users/1192538/screenshots/16507884/media/27aa37c97cf336391a72dc8bf24b140e.png?compress=1&resize=1000x750&vertical=top",
       name: "FullStack Chating App",
       demo: "https://chat-box-interchange.onrender.com",
@@ -18,7 +24,7 @@ const Project = () => {
   ];
 
   return (
-    <div name="work" className=" w-full text-gray-300 bg-[#0a192f]">
+    <div name="work" className=" w-full h-screen text-gray-300 bg-[#0a192f]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-pink-500 text-gray-300 ">
